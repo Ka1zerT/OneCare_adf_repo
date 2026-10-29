@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-onecare"
+		},
+		"LS_ADLS_properties_typeProperties_url": {
+			"value": "https://onecareproject.dfs.core.windows.net/"
+		},
+		"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://OneCareKV.vault.azure.net/"
+		},
+		"LS_PostgreSQL_properties_typeProperties_server": {
+			"value": "ep-patient-fire-a1oa2izh-pooler.ap-southeast-1.aws.neon.tech"
+		},
+		"LS_PostgreSQL_properties_typeProperties_database": {
+			"value": "neondb"
+		},
+		"LS_PostgreSQL_properties_typeProperties_username": {
+			"value": "neondb_owner"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_server": {
+			"value": "onecare-server.database.windows.net"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_database": {
+			"value": "sql_db_onecare"
+		},
+		"LS_AzureSqlDatabase_properties_typeProperties_userName": {
+			"value": "Ka1zer"
+		}
+	}
+}

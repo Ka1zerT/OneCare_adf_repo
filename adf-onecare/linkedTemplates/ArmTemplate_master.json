@@ -11,21 +11,13 @@
 			"type": "string",
 			"defaultValue": "https://onecareproject.dfs.core.windows.net/"
 		},
+		"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "1029-173034-gm9vjyjf"
+		},
 		"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
 			"type": "string",
 			"defaultValue": "https://OneCareKV.vault.azure.net/"
-		},
-		"LS_PostgreSQL_properties_typeProperties_server": {
-			"type": "string",
-			"defaultValue": "ep-patient-fire-a1oa2izh-pooler.ap-southeast-1.aws.neon.tech"
-		},
-		"LS_PostgreSQL_properties_typeProperties_database": {
-			"type": "string",
-			"defaultValue": "neondb"
-		},
-		"LS_PostgreSQL_properties_typeProperties_username": {
-			"type": "string",
-			"defaultValue": "neondb_owner"
 		},
 		"LS_AzureSqlDatabase_properties_typeProperties_server": {
 			"type": "string",
@@ -38,6 +30,18 @@
 		"LS_AzureSqlDatabase_properties_typeProperties_userName": {
 			"type": "string",
 			"defaultValue": "Ka1zer"
+		},
+		"LS_PostgreSQL_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "ep-patient-fire-a1oa2izh-pooler.ap-southeast-1.aws.neon.tech"
+		},
+		"LS_PostgreSQL_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "neondb"
+		},
+		"LS_PostgreSQL_properties_typeProperties_username": {
+			"type": "string",
+			"defaultValue": "neondb_owner"
 		},
 		"containerUri": {
 			"type": "string",
@@ -72,14 +76,8 @@
 					"LS_AzureKeyVault_properties_typeProperties_baseUrl": {
 						"value": "[parameters('LS_AzureKeyVault_properties_typeProperties_baseUrl')]"
 					},
-					"LS_PostgreSQL_properties_typeProperties_server": {
-						"value": "[parameters('LS_PostgreSQL_properties_typeProperties_server')]"
-					},
-					"LS_PostgreSQL_properties_typeProperties_database": {
-						"value": "[parameters('LS_PostgreSQL_properties_typeProperties_database')]"
-					},
-					"LS_PostgreSQL_properties_typeProperties_username": {
-						"value": "[parameters('LS_PostgreSQL_properties_typeProperties_username')]"
+					"LS_AzureDatabricks_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('LS_AzureDatabricks_properties_typeProperties_existingClusterId')]"
 					},
 					"LS_AzureSqlDatabase_properties_typeProperties_server": {
 						"value": "[parameters('LS_AzureSqlDatabase_properties_typeProperties_server')]"
@@ -89,6 +87,15 @@
 					},
 					"LS_AzureSqlDatabase_properties_typeProperties_userName": {
 						"value": "[parameters('LS_AzureSqlDatabase_properties_typeProperties_userName')]"
+					},
+					"LS_PostgreSQL_properties_typeProperties_server": {
+						"value": "[parameters('LS_PostgreSQL_properties_typeProperties_server')]"
+					},
+					"LS_PostgreSQL_properties_typeProperties_database": {
+						"value": "[parameters('LS_PostgreSQL_properties_typeProperties_database')]"
+					},
+					"LS_PostgreSQL_properties_typeProperties_username": {
+						"value": "[parameters('LS_PostgreSQL_properties_typeProperties_username')]"
 					}
 				}
 			},

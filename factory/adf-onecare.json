@@ -1,0 +1,12 @@
+{
+	"name": "adf-onecare",
+	"properties": {
+		"globalParameters": {
+			"email_recepient": {
+				"type": "string",
+				"value": "khan.altaf.engineer@gmail.com"
+			}
+		}
+	},
+	"location": "centralindia"
+}
